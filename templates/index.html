@@ -1,0 +1,299 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>137</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+	<link rel="shortcut icon" type="image/x-icon" href="../static/img/favicon.png">
+	<!-- Place favicon.ico in the root directory -->
+
+	<!-- CSS here -->
+	<link rel="stylesheet" href="../static/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../static/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="../static/css/magnific-popup.css">
+	<link rel="stylesheet" href="../static/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../static/css/themify-icons.css">
+	<link rel="stylesheet" href="../static/css/nice-select.css">
+	<link rel="stylesheet" href="../static/css/flaticon.css">
+	<link rel="stylesheet" href="../static/css/gijgo.css">
+	<link rel="stylesheet" href="../static/css/animate.css">
+	<link rel="stylesheet" href="../static/css/slicknav.css">
+	<link rel="stylesheet" href="../static/css/style.css">
+	<!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid p-0">
+                    <div class="row align-items-center no-gutters">
+                        <div class="col-xl-2 col-lg-2">
+                            <div class="logo-img">
+                                <a href="{{ url_for('new') }}">
+                                    <img src="../static/img/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7">
+                            
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                            <div class="log_chat_area d-flex align-items-center">
+                                {% if 'user' in session %}
+                                <a href="#" class="login popup-with-form" onclick="location.href='/logout'">
+                                    <i class="flaticon-user"></i>
+                                    <span>                                        
+                                            로그아웃
+                                    </span>
+                                </a>
+                                {% else %}
+                                <a href="#test-form" class="login popup-with-form">
+                                    <i class="flaticon-user"></i>
+                                    <span>
+                                        로그인                                        
+                                    </span>
+                                </a>
+                                {% endif %}
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+    <div class="slider_area">
+        <div class="single_slider d-flex align-items-center justify-content-center slider_bg_1 overlay2">
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-xl-9">
+                        <div class="slider_text text-center">
+                            <h3>137</h3>
+                            <div class="find_dowmain">
+                                <form action="/" method="POST" class="find_dowmain_form" >
+                                    <input type="text" id="lname" name="name" placeholder="태그 검색">
+                                    <button type="submit" value="확인">검색</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- slider_area_end -->
+
+    <!-- prising_area_start -->
+    
+    <!-- prising_area_end -->
+
+    <!-- core_features_start -->
+    
+    <!-- core_features_end -->
+
+    <!-- dedicated_support_start -->
+    
+    <!-- dedicated_support_end -->
+
+    
+
+
+    <!-- faq_area_start -->
+    
+    <!-- faq_area_end -->
+
+
+
+    <!-- latest_new_area_start -->
+    
+    <!-- latest_new_area_end -->
+
+    <!-- lets_launch_start -->
+
+    <!-- lets_launch_end -->
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <div class="footer_logo">
+                                <a href="#">
+                                    <img src="../static/img/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-md-6 col-lg-3">
+                        <div class="footer_widget">
+                            <h3 class="footer_title">
+                                창의설계 팀플
+                            </h3>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="footer_border"></div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+                        	2020 창의설계 1학기 team137 프로젝트
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+    <!-- link that opens popup -->
+
+    <!-- form itself end-->
+    <form id="test-form" class="white-popup-block mfp-hide" action="/login" method="POST">
+        <div class="popup_box ">
+            <div class="popup_inner">
+                <div class="logo text-center">
+                    <a href="#">
+                        <img src="../static/img/form-logo.png" alt="">
+                    </a>
+                </div>
+                <h3>로그인</h3>
+                    <div class="row">
+                        <div class="col-xl-12 col-md-12">
+                            <input type="email" placeholder="이메일" name = 'email'>
+                        </div>
+                        <div class="col-xl-12 col-md-12">
+                            <input type="password" placeholder="비밀번호" name = 'password'>
+                        </div>
+                        <div class="col-xl-12">
+                            <button type="submit" class="boxed_btn_blue">Sign in</button>
+                        </div>
+                    </div>
+                <p class="doen_have_acc">아이디가 없으신가요? <a class="dont-hav-acc" href="#test-form2">회원가입</a>
+                </p>
+                <a id="custom-login-btn" href="#" onClick="window.open('https://accounts.kakao.com/login?continue=https%3A%2F%2Fkauth.kakao.com%2Foauth%2Fauthorize%3Fclient_id%3Dc089c8172def97eb00c07217cae17495%26redirect_uri%3Dhttps%253A%252F%252Fdevelopers.kakao.com%252Ftool%252Fdemo%252Foauth%26response_type%3Dcode%26auth_tran_id%3D6j3d1gt9pebc089c8172def97eb00c07217cae17495kbufj3r3%26ka%3Dsdk%252F1.39.1%2520os%252Fjavascript%2520lang%252Fko-KR%2520device%252FWin32%2520origin%252Fhttps%25253A%25252F%25252Fdevelopers.kakao.com%26is_popup%3Dfalse')">
+                    <img src="//k.kakaocdn.net/14/dn/btqCn0WEmI3/nijroPfbpCa4at5EIsjyf0/o.jpg"
+                    width="222"
+                    />
+                </a>
+                <p id="token-result"></p>
+                <script type="text/javascript">
+                    // input your appkey
+                    Kakao.init('c089c8172def97eb00c07217cae17495')
+                    function loginWithKakao() {
+                      Kakao.Auth.authorize({
+                        redirectUri: 'https://developers.kakao.com/tool/demo/oauth'
+                      })
+                    }
+                    // UI code below
+                    getToken()
+                    function getToken() {
+                      const token = getCookie('authorize-access-token')
+                      if(token) {
+                        Kakao.Auth.setAccessToken(token)
+                        document.getElementById('token-result').innerText = 'login success. token: ' + Kakao.Auth.getAccessToken()
+                      }
+                    }
+                    function getCookie(name) {
+                      const value = "; " + document.cookie;
+                      const parts = value.split("; " + name + "=");
+                      if (parts.length === 2) return parts.pop().split(";").shift();
+                    }
+                </script>
+            </div>
+        </div>
+    </form>
+    <!-- form itself end -->
+
+    <!-- form itself end-->
+    <form id="test-form2" class="white-popup-block mfp-hide"  action="/join" method="POST">
+        <div class="popup_box ">
+            <div class="popup_inner">
+                <div class="logo text-center">
+                    <a href="#">
+                        <img src="../static/img/form-logo.png" alt="">
+                    </a>
+                </div>
+                <h3>회원가입</h3>
+                    <div class="row">
+                        <div class="col-xl-12 col-md-12">
+                            <input type="text" placeholder="이메일" name = "email" id = "email">
+                        </div>
+                        <div class="col-xl-12 col-md-12">
+                            <input type="password" placeholder="비밀번호" name = "password">
+                        </div>
+                        <div class="col-xl-12 col-md-12">
+                            <input type="password" placeholder="비밀번호 확인">
+                        </div>
+                        <div class="col-xl-12 col-md-12">
+                            <input type="text" placeholder="이름" name = "name">
+                        </div>						
+                        <div class="col-xl-12">
+                            <button type="submit" class="boxed_btn_blue">회원가입</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </form>
+    <!-- form itself end -->
+<script>
+window.onload = function() {
+    // document.getElementById('joinBtn').onclick = function() {
+    //     var emill = document.getElementById('email').value;
+    //     alert(emill);
+    //     document.getElementById('joinFrm').submit().action = '/join';
+    //     return false;
+    // };
+};
+
+</script>
+
+    <!-- JS here -->
+    <script src="../static/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="../static/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../static/js/popper.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <script src="../static/js/isotope.pkgd.min.js"></script>
+    <script src="../static/js/ajax-form.js"></script>
+    <script src="../static/js/waypoints.min.js"></script>
+    <script src="../static/js/jquery.counterup.min.js"></script>
+    <script src="../static/js/imagesloaded.pkgd.min.js"></script>
+    <script src="../static/js/scrollIt.js"></script>
+    <script src="../static/js/jquery.scrollUp.min.js"></script>
+    <script src="../static/js/wow.min.js"></script>
+    <script src="../static/js/nice-select.min.js"></script>
+    <script src="../static/js/jquery.slicknav.min.js"></script>
+    <script src="../static/js/jquery.magnific-popup.min.js"></script>
+    <script src="../static/js/plugins.js"></script>
+    <script src="../static/js/gijgo.min.js"></script>
+
+    <!--contact js-->
+
+
+    <script src="../static/js/main.js"></script>
+   
+</body>
+
+</html>
